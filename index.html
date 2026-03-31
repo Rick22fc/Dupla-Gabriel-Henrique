@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adivinhe a palavra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Acerte a palavra secreta</h1>
+    <div class="container">
+        <div class="textos">
+            <h3>Digite a palavra secreta:</h3>
+            <input type="password" id="segredo" onkeyup="habilitarBtIniciar()">
+            <button id="btInicia" disabled onclick="iniciarOJogo()">Iniciar o jogo</button>
+            <h3>Digite uma letra:</h3>
+            <input id="tentativa" type="text" maxlength="1">
+            <button id="btVerifica" disabled onclick="verificarLetra()">Confirmar</button>
+            <h2 id="painel"></h2>
+            <h2>Erros:</h2>
+            <h2 id="erradas_"></h2>
+            <button id="reset">Reiniciar o jogo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
